@@ -6,4 +6,4 @@ Initially, JavaScript was only used to build interactive web pages. Nowadays, it
 
 In this repository you'll find all the JavaScript stuff I've learned so far along with some notes, explanations and resolved exercises.
 
-**Disclaimer:** This is for learning purposes only!
+**Disclaimer:** This is for personal learning purposes only!
