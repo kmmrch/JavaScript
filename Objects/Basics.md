@@ -20,7 +20,7 @@ const circle = {
 };
 ```
 
-#### **FACTORY FUNCTIONS:** produce objects
+##### **FACTORY FUNCTIONS:** produce objects
 
 ```
 function createCircle(radius){
@@ -39,4 +39,33 @@ const circle2 = createCircle(2);
 console.log(circle2);
 ```
 
-#### **CONSTRUCTOR FUNCTIONS:**
+##### **CONSTRUCTOR FUNCTIONS:**
+
+✎ When naming constructor functions we should use pascal notation by convention!
+
+```
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+const circle = new Circle(1);
+```
+
+In factory functions we simply call the function and in this function we return an object. Meanwhile, in constructor functions we use the "new" operator and, instead of returning an object, we use the "this" keyword
+
+##### DYNAMIC NATURE OF OBJECTS:
+In javascript, once you create an object you can always add new properties or methods, or remove existing ones
+```
+const circle = {
+    radius: 1
+};
+circle.color = 'yellow'; // new property
+circle.draw = function(){} // new method
+
+delete circle.color; // remove existing property
+delete circle.draw; // remove existing method
+
+console.log(circle);
+```
