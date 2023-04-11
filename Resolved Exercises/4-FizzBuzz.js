@@ -1,3 +1,9 @@
+// if the number is divisible by 3 ==> fizz
+// if it is divisible by 5 ==> buzz
+// if it is divisible by both 3 and 5 ==> fizzbuzz
+// if it isn't divisible by either of the numbers ==> we get the same number
+// if it isn't a number ==> NaN
+
 const output = fizzBuzz(3);
 console.log(output);
 
