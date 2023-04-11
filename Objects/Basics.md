@@ -106,4 +106,74 @@ Circle.apply({}, [1, 2, 3]);
 
 ✎ Every object in JavaScript has a constructor property, and that references the function that was used to create said object.
 
-##### VALUE VS. REFERENCE TYPES:
+##### ENUMERATING PROPERTIES OF AN OBJECT:
+```
+const circle = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+};
+```
+- Use the bracket notation to get the value of this key/property:
+```
+for(let key in circle)
+    console.log(key, circle[key]);
+```
+- This will return an array, and since arrays are iterables, you'll get access to the properties:
+```
+for(let key of Object.keys(circle))
+    console.log(key);
+```
+- Another way to get access to all the properties and methods in an object:
+```
+for(let entry of Object.entries(circle))
+    console.log(entry);
+```
+> ✎ The "for/of" loop can only be used with iterables, such as arrays and maps!
+
+- Sees if a given property or method exists in an object:
+```
+if('radius' in circle) console.log('yes');
+```
+
+##### 3 WAYS TO CLONE AN OBJECT
+- First way:
+```
+const circle = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+};
+
+const another = {};
+
+for(let key in circle)
+    another[key] = circle[key];
+console.log(another);
+```
+- Object.assign(): this method takes all the properties of methods in the source object and copies them into the new object, or combine multiple objects into a single object
+```
+const circle = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+};
+
+const another = Object.assign({}, circle);
+console.log(another);
+```
+- Spread operator: gets all the properties and methods and put them into another object
+```
+const circle = {
+    radius: 1,
+    draw(){
+        console.log('draw');
+    }
+};
+
+const another = (...circle);
+console.log(another);
+```
