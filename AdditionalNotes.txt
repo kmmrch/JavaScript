@@ -5,3 +5,7 @@ Example: oneTwoThreeFour
 ✎ Pascal Notation:
 The first letter of ever word should be uppercase.
 Example: OneTwoThreeFour
+
+✎ Carbage Collection:
+The garbage collector figures out what variables or constants are no longer used and then deallocate the memory that was allocated to them earlier.
+Memory allocation and deallocation automatically happens behind the scenes, and developers have no control over it.
