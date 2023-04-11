@@ -1,4 +1,4 @@
-// Implement a function isLandscape that takes two parameters: width and height of an image:
+// Implement a function isLandscape that takes two parameters: width and height of an image
 // it returns true if the image is landscape (width > height)
 // otherwise it returns false
 
