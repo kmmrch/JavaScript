@@ -69,3 +69,41 @@ delete circle.draw; // remove existing method
 
 console.log(circle);
 ```
+
+##### FUNCTIONS ARE OBJECTS:
+```
+function Circle(radius){
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+}
+```
+- Returns the name of the function:
+```
+Circle.name;
+```
+
+- Returns the number of arguments:
+```
+Circle.length;
+```
+
+- Calls the function (the curly braces references the object):
+```
+Circle.call({}, 1);
+```
+
+- This does the exact same thing as the line above:
+```
+const another = new Circle(1);
+```
+
+- Calls the function, but instead of passing the arguments explicitly we pass them in an array (it's useful when we already have an array):
+```
+Circle.apply({}, [1, 2, 3]);
+```
+
+✎ Every object in JavaScript has a constructor property, and that references the function that was used to create said object.
+
+##### VALUE VS. REFERENCE TYPES:
