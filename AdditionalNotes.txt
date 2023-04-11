@@ -1,0 +1,7 @@
+✎ Camel Notation:
+The first letter of the first word will be always lowercase and the first letter of every word after is uppercase.
+Example: oneTwoThreeFour
+
+✎ Pascal Notation:
+The first letter of ever word should be uppercase.
+Example: OneTwoThreeFour
