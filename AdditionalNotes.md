@@ -22,3 +22,6 @@ Memory allocation and deallocation automatically happens behind the scenes, and 
 
 Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
 You can find more about it [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
+
+##### **!!!***
+sometimes if there's an if statement with only 1 line of code after, some developers prefer to put that line next to the if statement.
